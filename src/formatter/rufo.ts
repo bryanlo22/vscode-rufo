@@ -128,7 +128,7 @@ export default class Rufo {
 
     if (!spawnOpt.env) {
       // also here we need to assume UTF-8 (see above)
-      spawnOpt.env = { ...process.env, LANG: "en_US.UTF-8" }; // eslint-disable-line @typescript-eslint/naming-convention
+      spawnOpt.env = { ...process.env, LANG: "C.UTF-8" }; // eslint-disable-line @typescript-eslint/naming-convention
     }
 
     const cmd = exe.shift() as string;

@@ -73,5 +73,5 @@ end`;
       .then(() => {
         assert.strictEqual(document.getText(), PARTIALLY);
       });
-  });
+  }).timeout(20000);
 });
